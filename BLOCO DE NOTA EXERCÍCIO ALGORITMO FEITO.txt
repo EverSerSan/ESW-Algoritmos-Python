@@ -1,0 +1,38 @@
+def soma(a, b): 
+    return a + b
+
+def subtracao(a, b):
+    return a - b
+
+def multiplicacao(a, b):
+    return a * b
+
+def divisao(a, b):
+    if b == 0:
+        return "Erro: Divisão por zero"
+    return a / b
+
+def testeAB():
+    a = float(input("Insira o primeiro valor (A): "))
+    b = float(input("Insira o segundo valor (B): ")) 
+ 
+    # Validação: Garante que A seja maior que B
+    while a <= b:
+        print("Erro: O primeiro valor deve ser maior que o segundo.")
+        a = float(input("Insira o primeiro valor novamente: "))
+        b = float(input("Insira o segundo valor novamente: "))
+    
+    print("Valores aceitos!")
+    
+
+resultado da soma = soma(a, b)
+resultado da subtração  = subtracao(a, b)
+resultado da multiplicação = multiplicacao(a, b)
+resultado da divisão  = divisao(a, b)
+
+Exiba todos os resultados
+print("-" * 20)
+print(f"Soma: {resultado da soma}")
+print(f"Subtração: {resultado da subtração}")
+print(f"Multiplicação: {resultado da multiplicação}")
+print(f"Divisão: {resultado da divisão}")
